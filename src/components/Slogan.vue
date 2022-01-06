@@ -30,5 +30,6 @@ a {
 
 .slogan {
     background-color: rgba(255, 255, 255, 0.397);
+    margin-top: 10rem;
 }
 </style>

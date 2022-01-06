@@ -32,11 +32,13 @@ export default {
   background-image: url("../assets/fondchimievertrose.jpg");
   height: 100vh;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .text-bold {
   font-style: bold;
 }
 
 .text-purple {
+  color: #b960ff;
 }
 </style>

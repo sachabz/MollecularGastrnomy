@@ -5,32 +5,42 @@
         mode="horizontal"
         background-color="#000000"
         text-color="#fff"
-        active-text-color="#ffd04b"
+        active-text-color="#99E48A"
         @select="handleSelect"
     >
         <el-menu-item>
-            <img
-                src="../assets/logoMarksblanc.png"
-                height="48"
-                width="48"
-                style="display: inline-block;"
-            />
+            <span>
+                <img
+                    src="../assets/logoMarksblanc.png"
+                    height="48"
+                    width="48"
+                    style="display: inline-block; vertical-align: middle"
+                />
+            </span>
         </el-menu-item>
-        <el-menu-item index="1">Processing Center</el-menu-item>
-        <el-sub-menu index="2">
-            <template #title>Workspace</template>
-            <el-menu-item index="2-1">item one</el-menu-item>
-            <el-menu-item index="2-2">item two</el-menu-item>
-            <el-menu-item index="2-3">item three</el-menu-item>
-            <el-sub-menu index="2-4">
-                <template #title>item four</template>
-                <el-menu-item index="2-4-1">item one</el-menu-item>
-                <el-menu-item index="2-4-2">item two</el-menu-item>
-                <el-menu-item index="2-4-3">item three</el-menu-item>
-            </el-sub-menu>
+        <el-sub-menu index="1">
+            <template #title>Recipies.</template>
+            <el-menu-item index="1-1">Starters</el-menu-item>
+            <el-menu-item index="1-2">Dishes</el-menu-item>
+            <el-menu-item index="1-3">Desserts</el-menu-item>
         </el-sub-menu>
-        <el-menu-item index="3" disabled>Info</el-menu-item>
-        <el-menu-item index="4">Orders</el-menu-item>
+        <el-menu-item>
+            <form class="form-inline my-2 my-lg-0">
+                <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </el-menu-item>
+        <el-menu-item index="2">Login|Register.</el-menu-item>
+        <el-menu-item index="3">
+            <span>
+                <i class="far fa-user" style="display: inline-block; vertical-align: middle"></i>
+            </span>
+        </el-menu-item>
     </el-menu>
 </template>
 
@@ -47,5 +57,22 @@ export default {
 <style scoped lang="scss">
 .navbar {
     width: 100vw;
+}
+.btn {
+    color: #99e48a;
+    border-color: #99e48a;
+    font-size: 14px;
+}
+
+.form-control {
+    font-size: 14px;
+}
+.btn:hover {
+    background-color: #99e48a;
+    color: white;
+}
+
+.fa-user:hover {
+    color: #99e48a;
 }
 </style>
