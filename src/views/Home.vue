@@ -2,12 +2,13 @@
   <div class="home">
     <Navbar />
     <div class="content">
-      <Slogan
-        class="bold"
-        msg="Mollecular Gastronomy"
-        msg2="Make it SIMPLE"
-        auteur="By Thierry MARX"
-      />
+      <Slogan class="text-bold" auteur="By Thierry MARX">
+        Mollecular Gastronomy
+        <template v-slot:subtitle>
+          Make it
+          <span class="text-purple">SIMPLE</span>
+        </template>
+      </Slogan>
     </div>
   </div>
 </template>
@@ -27,16 +28,15 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;800&display=swap");
-.content {
+.home {
   background-image: url("../assets/fondchimievertrose.jpg");
-  background-size: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
-  font-family: "Rokkitt", serif;
 }
-.bold {
-  font-family: "Rokkitt", serif;
+.text-bold {
   font-style: bold;
+}
+
+.text-purple {
 }
 </style>

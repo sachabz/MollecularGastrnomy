@@ -1,48 +1,37 @@
 <template>
-    <div class="navbar container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/logoMarksblanc.png" width="50px" height="50px" />
-            </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            class="nav-link disabled"
-                            href="#"
-                            tabindex="-1"
-                            aria-disabled="true"
-                        >Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </div>
+    <el-menu
+        :default-active="activeIndex2"
+        class="el-menu-demo"
+        mode="horizontal"
+        background-color="#000000"
+        text-color="#fff"
+        active-text-color="#ffd04b"
+        @select="handleSelect"
+    >
+        <el-menu-item>
+            <img
+                src="../assets/logoMarksblanc.png"
+                height="48"
+                width="48"
+                style="display: inline-block;"
+            />
+        </el-menu-item>
+        <el-menu-item index="1">Processing Center</el-menu-item>
+        <el-sub-menu index="2">
+            <template #title>Workspace</template>
+            <el-menu-item index="2-1">item one</el-menu-item>
+            <el-menu-item index="2-2">item two</el-menu-item>
+            <el-menu-item index="2-3">item three</el-menu-item>
+            <el-sub-menu index="2-4">
+                <template #title>item four</template>
+                <el-menu-item index="2-4-1">item one</el-menu-item>
+                <el-menu-item index="2-4-2">item two</el-menu-item>
+                <el-menu-item index="2-4-3">item three</el-menu-item>
+            </el-sub-menu>
+        </el-sub-menu>
+        <el-menu-item index="3" disabled>Info</el-menu-item>
+        <el-menu-item index="4">Orders</el-menu-item>
+    </el-menu>
 </template>
 
 <script>
@@ -56,4 +45,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.navbar {
+    width: 100vw;
+}
 </style>
