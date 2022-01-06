@@ -9,14 +9,16 @@
         @select="handleSelect"
     >
         <el-menu-item>
-            <span>
-                <img
-                    src="../assets/logoMarksblanc.png"
-                    height="48"
-                    width="48"
-                    style="display: inline-block; vertical-align: middle"
-                />
-            </span>
+            <router-link to="/">
+                <span>
+                    <img
+                        src="../assets/logoMarksblanc.png"
+                        height="48"
+                        width="48"
+                        style="display: inline-block; vertical-align: middle"
+                    />
+                </span>
+            </router-link>
         </el-menu-item>
         <el-sub-menu index="1">
             <template #title>Recipies.</template>
@@ -35,7 +37,9 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </el-menu-item>
-        <el-menu-item index="2">Login|Register.</el-menu-item>
+        <el-menu-item index="2">
+            <router-link to="/login">Login|Register.</router-link>
+        </el-menu-item>
         <el-menu-item index="3">
             <span>
                 <i class="far fa-user" style="display: inline-block; vertical-align: middle"></i>
@@ -45,12 +49,14 @@
 </template>
 
 <script>
+
 export default {
     name: 'Navbar',
     props: {
 
     }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

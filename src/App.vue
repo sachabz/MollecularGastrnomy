@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;800&display=swap");
 #app {
-  font-family: "Rokkit", Helvetica, Arial, serif !important;
+  font-family: "Rokkit", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
