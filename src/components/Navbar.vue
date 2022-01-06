@@ -19,14 +19,9 @@
                     />
                 </span>
             </router-link>
-        </el-menu-item>
-        <el-sub-menu index="1">
-            <template #title>Recipies.</template>
-            <el-menu-item index="1-1">Starters</el-menu-item>
-            <el-menu-item index="1-2">Dishes</el-menu-item>
-            <el-menu-item index="1-3">Desserts</el-menu-item>
-        </el-sub-menu>
-        <el-menu-item>
+            <el-menu-item index="1">
+                <router-link to="/recipies">Recipies.</router-link>
+            </el-menu-item>
             <form class="form-inline my-2 my-lg-0">
                 <input
                     class="form-control mr-sm-2"

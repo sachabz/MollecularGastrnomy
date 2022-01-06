@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div class="title titlebg">
         <h1 class="font-weight-bold">{{ title }}.</h1>
     </div>
 </template>
@@ -18,5 +18,9 @@ export default {
 <style scoped lang="scss">
 .title {
     margin-top: 5rem;
+}
+
+.titlebg {
+    background-color: rgba(255, 255, 255, 0.397);
 }
 </style>
