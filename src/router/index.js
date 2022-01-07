@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Recipies from '../views/Recipies.vue'
+import Viewrecipies from '../views/Viewrecipies.vue'
 
 
 const routes = [
@@ -28,6 +29,11 @@ const routes = [
     path: '/recipies',
     name: 'Recipies',
     component: Recipies
+  },
+  {
+    path: '/viewrecipies',
+    name: 'Viewrecipies',
+    component: Viewrecipies
   },
   {
     path: '/about',

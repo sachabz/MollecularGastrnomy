@@ -97,6 +97,6 @@ img {
 }
 
 .contentbg {
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: rgba(255, 255, 255, 0.575);
 }
 </style>

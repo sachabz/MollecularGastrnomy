@@ -1,21 +1,25 @@
 <template>
     <div class="title">
         <h3 class="font-weight-bold text-left">{{ title }}.</h3>
-        <i class="far fa-dot-circle float-left mr-2"></i>
-        <i class="far fa-dot-circle float-left mr-2"></i>
-        <i class="far fa-dot-circle float-left mr-2"></i>
+        <Difficulty class="float-left mr-2" />
+        <Difficulty class="float-left mr-2" />
+        <Difficulty class="float-left mr-2" />
         <br />
         <p class="text-left">{{ time }}</p>
-        <Buttonsubmit textbutton="Cook it" class="mt-1 mb-1 float-left" />
+        <router-link to="/Viewrecipies">
+            <Buttonsubmit textbutton="Cook it" class="mt-1 mb-1 float-left" />
+        </router-link>
     </div>
 </template>
 
 <script>
 import Buttonsubmit from './Buttonsubmit.vue'
+import Difficulty from './Difficulty.vue'
 export default {
     name: 'Contentrecipies',
     components: {
         Buttonsubmit,
+        Difficulty
     },
     props: {
 
