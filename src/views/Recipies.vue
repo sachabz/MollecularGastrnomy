@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="content container">
       <Title title="Recipies" />
       <div class="row">
@@ -53,7 +52,6 @@
 <script>
 // @ is an alias to /src
 
-import Navbar from '@/components/Navbar.vue'
 import Title from '@/components/Title.vue'
 import Filter from '../components/Filter.vue'
 import Contentrecipies from '../components/Contentrecipies.vue'
@@ -62,7 +60,6 @@ import Contentrecipies from '../components/Contentrecipies.vue'
 export default {
   name: 'Recipies',
   components: {
-    Navbar,
     Title,
     Filter,
     Contentrecipies,
@@ -80,7 +77,7 @@ export default {
 }
 
 .content {
-  margin-top: 5rem;
+  padding-top: 0rem;
 }
 
 .text-purple {

@@ -30,6 +30,7 @@ a {
 
 .slogan {
     background-color: rgba(255, 255, 255, 0.397);
-    margin-top: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 </style>

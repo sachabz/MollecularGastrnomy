@@ -33,7 +33,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .title {
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .titlebg {

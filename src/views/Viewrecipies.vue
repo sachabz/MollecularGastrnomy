@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="content container">
       <router-link to="/Recipies">
         <h1 class="text-green text-right">X</h1>
@@ -69,7 +68,6 @@
 <script>
 // @ is an alias to /src
 
-import Navbar from '@/components/Navbar.vue'
 import Title from '@/components/Title.vue'
 import Step from '../components/Step.vue'
 import Difficulty from '../components/Difficulty.vue'
@@ -78,7 +76,6 @@ import Difficulty from '../components/Difficulty.vue'
 export default {
   name: 'Viewrecipies',
   components: {
-    Navbar,
     Title,
     Step,
     Difficulty
@@ -96,7 +93,7 @@ export default {
 }
 
 .content {
-  margin-top: 5rem;
+  padding-top: 2rem;
 }
 
 .text-purple {

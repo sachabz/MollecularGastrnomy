@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navbar />
     <transition appear @before-enter="beforeEnter" @enter="enter">
       <div class="content">
         <Slogan class="text-bold" auteur="By Thierry MARX">
@@ -18,14 +17,12 @@
 <script>
 // @ is an alias to /src
 
-import Navbar from '@/components/Navbar.vue'
 import Slogan from '@/components/Slogan.vue'
 import gsap from 'gsap'
 
 export default {
   name: 'Home',
   components: {
-    Navbar,
     Slogan
   },
   setup() {
@@ -48,6 +45,7 @@ export default {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 8rem;
 }
 .text-bold {
   font-style: bold;

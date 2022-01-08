@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="content">
       <Title title="Register" />
       <Inputpage nameinput="Name : " />
@@ -18,7 +17,6 @@
 <script>
 // @ is an alias to /src
 
-import Navbar from '@/components/Navbar.vue'
 import Title from '@/components/Title.vue'
 import Inputpage from '@/components/Inputpage.vue'
 import Inputpwd from '@/components/Inputpwd.vue'
@@ -27,7 +25,6 @@ import Buttonsubmit from '../components/Buttonsubmit.vue'
 export default {
   name: 'Register',
   components: {
-    Navbar,
     Inputpage,
     Inputpwd,
     Title,
@@ -45,7 +42,7 @@ export default {
 }
 
 .content {
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .text-purple {
